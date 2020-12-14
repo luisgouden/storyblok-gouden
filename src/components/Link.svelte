@@ -4,7 +4,7 @@
   export let blok
 </script>
 
-<div use:editable={blok} class="teaser">
+<div use:editable={blok} class="link">
   {blok.link}
-  console.log(blok.link)
+
 </div>
