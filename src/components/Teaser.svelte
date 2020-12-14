@@ -5,5 +5,5 @@
 </script>
 
 <div use:editable={blok} class="teaser">
-  {blok.headline}
+  {blok.texto}
 </div>
