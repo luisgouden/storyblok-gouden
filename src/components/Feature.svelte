@@ -6,4 +6,5 @@
 
 <div use:editable={blok} class="column feature">
   { blok.name }
+  { blok.subTitle }
 </div>
