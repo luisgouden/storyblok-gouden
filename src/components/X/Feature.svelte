@@ -4,7 +4,7 @@
   export let blok
 </script>
 
-<div use:editable={blok} class="link">
-  {blok.link}
-
+<div use:editable={blok} class="column feature">
+  { blok.name }
+  { blok.subTitle }
 </div>
