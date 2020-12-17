@@ -1,6 +1,6 @@
 <script>
-	export let segment;
-	export let stories = [];
+	//export let segment;
+	//export let stories = [];
 </script>
 
 <style>
@@ -27,21 +27,6 @@
 		float: left;
 	}
 
-	.selected {
-		position: relative;
-		display: inline-block;
-	}
-
-	.selected::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(255,62,0);
-		display: block;
-		bottom: -1px;
-	}
-
 	a {
 		text-decoration: none;
 		padding: 1em 0.5em;
@@ -50,11 +35,15 @@
 </style>
 
 <nav>
-	<ul>
-		{#each stories as story}
-			<li class={story.full_slug === segment ? 'selected' : ''}>
-				<a href={story.full_slug}> {story.name} </a>
-			</li>
-		{/each}
-	</ul>
+<ul>
+	<li>
+		<a href='.'> Index </a>
+	</li>
+	<li>
+		<a href='about'> About </a>
+	</li>
+	<li>
+		<a href='portfolio'> Portfolio </a>
+	</li>
+</ul>
 </nav>
