@@ -8,6 +8,8 @@ import BlokTexto from './BlokTexto.svelte'
 import BlokBlok from './BlokBlok.svelte'
 import BlokLandingProject from './BlokLandingProject.svelte'
 import BlokLandingContainer from './BlokLandingContainer.svelte'
+import BlokList from './BlokList.svelte'
+import BlokListContainer from './BlokListContainer.svelte'
 
 const Components = {
   Page,
@@ -17,7 +19,10 @@ const Components = {
   BlokTexto,
   BlokHeader,
   BlokLandingProject,
-  BlokLandingContainer
+  BlokLandingContainer,
+  BlokList,
+  BlokListContainer
+
 }
 
 export default component => {

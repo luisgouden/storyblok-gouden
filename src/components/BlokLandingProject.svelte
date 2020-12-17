@@ -12,6 +12,6 @@
 
 </style>
 
-<a href={blok.image.filename} use:editable={blok}>
-  	<img alt={blok.image.filename} src={blok.image.filename}>
+<a href={blok.image.title} use:editable={blok}>
+  	<img alt={blok.image.alt} src={blok.image.filename}>
 </a>
