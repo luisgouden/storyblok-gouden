@@ -22,12 +22,7 @@ function saveData() {
 </svelte:head>
 
 
-
-{#if valido}
-hola
-{:else}
 <div>
 <input type="text" bind:value="{val}">
 <button on:click="{saveData}">save</button>
 </div>
-{/if}
