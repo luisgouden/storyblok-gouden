@@ -1,17 +1,5 @@
-<script>
-import { goto } from '@sapper/app';
-
-let val='';
-function saveData() {
-	if(val === 'popi'){
-		goto('/portfolio');
-	}else{
-			console.log(val)
-	}
-}
-</script>
 <style>
-	h1, figure{
+	h1, figure, p {
 		text-align: center;
 		margin: 0 auto;
 	}
@@ -29,7 +17,9 @@ function saveData() {
 		max-width: 400px;
 		margin: 0 0 1em 0;
 	}
-
+	p {
+		margin: 1em auto;
+	}
 	@media (min-width: 480px) {
 		h1 {
 			font-size: 4em;
@@ -48,7 +38,4 @@ function saveData() {
 	<figcaption>HIGH FIVE!</figcaption>
 </figure>
 
-<div>
-<input type="text" bind:value="{val}">
-<button on:click="{saveData}">save</button>
-</div>
+<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
