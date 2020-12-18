@@ -1,5 +1,5 @@
 <script>
-	export let segment;
+	//export let segment;
 	//export let stories = [];
 </script>
 
@@ -33,7 +33,7 @@
 		display: block;
 	}
 </style>
-{#if segment !== undefined }
+
 <nav>
 <ul>
 	<li>
@@ -45,4 +45,3 @@
 </ul>
 
 </nav>
-{/if}
