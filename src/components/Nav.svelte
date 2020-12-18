@@ -1,5 +1,5 @@
 <script>
-	//export let segment;
+	export let segment;
 	//export let stories = [];
 </script>
 
@@ -35,6 +35,7 @@
 </style>
 
 <nav>
+{#if segment !== undefined}
 <ul>
 	<li>
 		<a href='about'> About </a>
@@ -43,4 +44,6 @@
 		<a href='portfolio'> Portfolio </a>
 	</li>
 </ul>
+
+{/if}
 </nav>
