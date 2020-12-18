@@ -3,14 +3,11 @@ import { goto } from '@sapper/app';
 
 let val='';
 let valido=false;
+
 function saveData() {
-	if(val === 'dragon'){
-		console.log('a la 2343242342 va la vencida')
-		valido = true;
 	if(val === 'popi'){
 		goto('/portfolio');
 	}
-}
 }
 </script>
 <style>
