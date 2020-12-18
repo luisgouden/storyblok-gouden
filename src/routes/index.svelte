@@ -2,15 +2,12 @@
 import { goto } from '@sapper/app';
 
 let val='';
-let valido=false;
 function saveData() {
 	if(val === 'popi'){
 		goto('/portfolio');
 	}else{
 			console.log(val)
 	}
-
-
 }
 </script>
 <style>
@@ -18,7 +15,7 @@ function saveData() {
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>Pipe Prime</title>
 </svelte:head>
 
 
