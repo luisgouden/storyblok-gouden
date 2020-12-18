@@ -11,7 +11,7 @@ function saveData() {
 }
 </script>
 <style>
-	h1, figure {
+	h1, figure{
 		text-align: center;
 		margin: 0 auto;
 	}

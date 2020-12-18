@@ -26,9 +26,7 @@
 	}
 </style>
 
-
 <Nav {segment} {stories} />
-
 
 <main>
 	<slot></slot>
