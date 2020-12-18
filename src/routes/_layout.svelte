@@ -26,7 +26,9 @@
 	}
 </style>
 
+{#if segment !== undefined}
 <Nav {segment} {stories} />
+{/if}
 
 <main>
 	<slot></slot>
