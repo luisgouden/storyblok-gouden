@@ -21,10 +21,9 @@ const Components = {
   BlokLandingProject,
   BlokLandingContainer,
   BlokList,
-  BlokListContainer
+  BlokListContainer,
 
 }
-
 export default component => {
   // component does exist
   if (typeof Components[component] !== "undefined") {

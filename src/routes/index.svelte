@@ -1,10 +1,11 @@
 <script>
+import { goto } from '@sapper/app';
+
 let val='';
 let valido=false;
 function saveData() {
-	if(val === 'dragon'){
-		console.log('a la 2343242342 va la vencida')
-		valido = true;
+	if(val === 'popi'){
+		goto('/portfolio');
 	}else{
 			console.log(val)
 	}
@@ -13,24 +14,7 @@ function saveData() {
 }
 </script>
 <style>
-	h1, figure{
-		text-align: center;
-		margin: 0 auto;
-	}
-	figure {
-		margin: 0 0 1em 0;
-	}
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
 
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
 </style>
 
 <svelte:head>
@@ -40,12 +24,7 @@ function saveData() {
 
 
 {#if valido}
-<h1>Great success!</h1>
-
-<figure>
-	<img alt='Borat' src='great-success.png'>
-	<figcaption>HIGH FIVE!</figcaption>
-</figure>
+hola
 {:else}
 <div>
 <input type="text" bind:value="{val}">

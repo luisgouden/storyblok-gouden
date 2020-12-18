@@ -37,10 +37,7 @@
 <nav>
 <ul>
 	<li>
-		<a href='.'> Index </a>
-	</li>
-	<li>
-		<a href='about'> About </a>
+		<a href='about'> skills </a>
 	</li>
 	<li>
 		<a href='portfolio'> Portfolio </a>
