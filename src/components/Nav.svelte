@@ -40,6 +40,9 @@
 <nav>
 <ul>
 	<li>
+		<a href='.' class="batman"> Index </a>
+	</li>
+	<li>
 		<a href='about'> About </a>
 	</li>
 	<li>
