@@ -32,11 +32,16 @@
 		padding: 1em 0.5em;
 		display: block;
 	}
+	.batman{
+		display: none;
+	}
 </style>
 
 <nav>
 <ul>
-
+	<li>
+		<a href='.' class="batman"> Index </a>
+	</li>
 	<li>
 		<a href='about'> About </a>
 	</li>
