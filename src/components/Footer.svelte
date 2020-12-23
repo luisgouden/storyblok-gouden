@@ -28,6 +28,8 @@ nav {
 
 </style>
 
+{#if segment !== undefined }
+
 <div class="comodin mobile"></div>
 
 <footer class="mobile">
@@ -35,3 +37,5 @@ nav {
 		<Menu {segment} />
 	</nav>
 </footer>
+
+{/if}
