@@ -10,6 +10,7 @@ import BlokLandingProject from './BlokLandingProject.svelte'
 import BlokLandingContainer from './BlokLandingContainer.svelte'
 import BlokList from './BlokList.svelte'
 import BlokListContainer from './BlokListContainer.svelte'
+import BlokExplicacion from './BlokExplicacion.svelte'
 
 const Components = {
   Page,
@@ -21,7 +22,8 @@ const Components = {
   BlokLandingProject,
   BlokLandingContainer,
   BlokList,
-  BlokListContainer
+  BlokListContainer,
+  BlokExplicacion
 
 }
 

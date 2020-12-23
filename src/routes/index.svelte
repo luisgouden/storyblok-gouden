@@ -9,6 +9,14 @@ function saveData() {
 		goto('/portfolio');
 	}
 }
+function validation(event){
+	const pass =  event.target.value;
+
+	if(pass === 'popi'){
+		goto('/portfolio');
+	}
+
+}
 </script>
 <style>
 	h1, figure{
@@ -48,6 +56,5 @@ function saveData() {
 </figure>
 
 <div>
-<input type="text" bind:value="{val}">
-<button on:click="{saveData}">save</button>
+<input type="text" value="{val}" on:input={validation}>
 </div>
