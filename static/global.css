@@ -1,36 +1,208 @@
-body {
-	margin: 0;
-	font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-	font-size: 14px;
-	line-height: 1.5;
-	color: #333;
+:root{
+  --black: hsl(338, 0%, 10%);
+  --blackTransparent: hsla(338, 0%, 10%,0);
+  --blackHover: hsl(338, 0%, 0%);
+  --white: hsl(338, 0%, 100%);
+  --grey: hsl(338, 0%, 50%);
+  --primary: #fff;
+  --secondary: #fff;
+  --heightMenu: 3em;
+  --heightMenuMobile: 6em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	margin: 0 0 0.5em 0;
-	font-weight: 400;
-	line-height: 1.2;
+.inline {
+  display: inline-block
+}
+
+.desktop {
+  display: none
+}
+
+@media (min-width:992px) {
+  .desktop {
+    display: none
+  }
+}
+
+@media (min-width:1200px) {
+  .desktop {
+    display: flex
+  }
+}
+
+.mobile {
+  display: flex
+}
+
+@media (min-width:992px) {
+  .mobile {
+    display: none
+  }
+}
+
+.tabtomobile {
+  display: flex
+}
+
+@media (min-width:1200px) {
+  .tabtomobile {
+    display: none
+  }
+}
+
+.tabtodesktop {
+  display: none
+}
+
+@media (min-width:992px) {
+  .tabtodesktop {
+    display: flex
+  }
+}
+
+@media (min-width:1200px) {
+  .tabtodesktop {
+    display: flex
+  }
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0
+}
+
+html {
+  box-sizing: border-box;
+  min-height: 1000px
+}
+
+*, :after, :before {
+  box-sizing: inherit
+}
+
+
+body {
+  font-family: Fira Sans, sans-serif;
+  color: #1a1a1a
+}
+
+body, h2 {
+  font-weight: 500
+}
+
+main {
+  display: flex;
+  flex-direction: column
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start
+}
+
+article, main {
+  width: 100%
+}
+
+ul {
+  padding: 0
+}
+
+ul li {
+  list-style-type: none;
+  list-style: none
+}
+
+a,a:hover, a:visited {
+  color: var(--black);
+  border: 0;
+  text-decoration: none
+}
+a:active{
+  color:var(--blackHover);
+}
+
+html {
+  font-size: 16px
+}
+
+@media screen and (min-width:320px) {
+  html {
+    font-size: calc(16px + 8 * ((100vw - 320px) / 880))
+  }
+}
+
+@media screen and (min-width:1200px) {
+  html {
+    font-size: 24px
+  }
 }
 
 h1 {
-	font-size: 2em;
+  font-size: 2.0736rem;
+  font-size: 27.648px
+	line-height:1;
 }
 
-a {
-	color: inherit;
+@media screen and (min-width:320px) {
+  h1 {
+    font-size: calc(27.648px + 26.352 * ((100vw - 320px) / 880))
+  }
 }
 
-code {
-	font-family: menlo, inconsolata, monospace;
-	font-size: calc(1em - 2px);
-	color: #555;
-	background-color: #f0f0f0;
-	padding: 0.2em 0.4em;
-	border-radius: 2px;
+@media screen and (min-width:1200px) {
+  h1 {
+    font-size: 54px
+  }
 }
 
-@media (min-width: 400px) {
-	body {
-		font-size: 16px;
-	}
+h2 {
+  font-size: 1.728rem;
+  font-size: 27.648px
+}
+
+@media screen and (min-width:320px) {
+  h2 {
+    font-size: calc(27.648px + 26.352 * ((100vw - 320px) / 880))
+  }
+}
+
+@media screen and (min-width:1200px) {
+  h2 {
+    font-size: 54px
+  }
+}
+
+h3 {
+  font-size: 1.44rem;
+  font-size: 23.04px
+}
+
+@media screen and (min-width:320px) {
+  h3 {
+    font-size: calc(23.04px + 12.96 * ((100vw - 320px) / 880))
+  }
+}
+
+@media screen and (min-width:1200px) {
+  h3 {
+    font-size: 36px
+  }
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: 300
+}
+
+a:active, a:hover {
+  color: #000
+}
+
+b, strong {
+  font-weight: 600
 }

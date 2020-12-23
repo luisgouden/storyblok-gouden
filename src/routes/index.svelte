@@ -19,42 +19,28 @@ function validation(event){
 }
 </script>
 <style>
-	h1, figure{
+	h1{
 		text-align: center;
-		margin: 0 auto;
-	}
-	h1 {
-		font-size: 2.8em;
 		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
 	}
-	figure {
-		margin: 0 0 1em 0;
-	}
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
+	input{
+		padding:.5rem;
+		max-width: 50%;
+		min-width: 50%;
+		margin: 2rem 0;
+		align-self: center;
+		border-radius: 0.5rem;
+border-style: solid;
+border-color: black;
+
 	}
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>Pipe Prime</title>
 </svelte:head>
 
-<h1>Great success!</h1>
+<h1>Esto es un H1</h1>
+<p>Esto es un parrafo donde pondremos cosas chulis y guays sobre Pipe, un señor muy formal.</p>
 
-<figure>
-	<img alt='Borat' src='great-success.png'>
-	<figcaption>HIGH FIVE!</figcaption>
-</figure>
-
-<div>
-<input type="text" value="{val}" on:input={validation}>
-</div>
+<input type="text" value="{val}" on:input={validation} placeholder="Entrar a la batcueva">
