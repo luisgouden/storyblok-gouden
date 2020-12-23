@@ -5,9 +5,10 @@
 </script>
 
 <style>
+a{
+}
 	img {
 		width: 100%;
-		max-width: 400px;
 	}
 
 </style>

@@ -82,29 +82,20 @@ html {
   box-sizing: inherit
 }
 
-
-body {
-  font-family: Fira Sans, sans-serif;
-  color: #1a1a1a
-}
-
-body, h2 {
-  font-weight: 500
-}
-
-main {
-  display: flex;
-  flex-direction: column
-}
-
 body {
   display: flex;
   justify-content: center;
   align-items: flex-start
 }
 
+#sapper{
+  width: 95%;
+  max-width: 1000px;
+
+}
+
 article, main {
-  width: 100%
+  width: 100%;
 }
 
 ul {
@@ -144,7 +135,6 @@ html {
 h1 {
   font-size: 2.0736rem;
   font-size: 27.648px
-	line-height:1;
 }
 
 @media screen and (min-width:320px) {
@@ -193,6 +183,16 @@ h3 {
   }
 }
 
+body {
+  font-family: Fira Sans, sans-serif;
+  line-height: 2rem;
+  color: #1a1a1a
+}
+
+body, h2 {
+  font-weight: 500
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -205,4 +205,9 @@ a:active, a:hover {
 
 b, strong {
   font-weight: 600
+}
+
+main {
+  display: flex;
+  flex-direction: column
 }

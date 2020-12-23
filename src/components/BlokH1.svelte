@@ -2,7 +2,6 @@
   import { editable } from '../directives'
 
   export let blok
-  console.log(blok);
 </script>
 
 <style>

@@ -1,54 +1,59 @@
 <script>
-	export let segment;
-	//export let stories = [];
+	import Brand from '../components/Brand.svelte';
+	import Menu from '../components/Menu.svelte';
+
+export let segment;
+
 </script>
 
 <style>
+
+aside {
+  height: max-content;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+	flex-direction:row;
+	top: 0;
+	width: 75%;
+	align-items: center
+}
+
+nav{
+  display: none;
+	font-weight: 400;
+}
+
+@media (min-width:992px) {
+
 	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
-		font-weight: 300;
-		padding: 0 1em;
+	  display: flex;
+	  align-items: center;
+	  width: min-content;
+	  flex-direction:row-reverse;
 	}
 
-	ul {
-		margin: 0;
-		padding: 0;
+}
+
+@media (min-width:1200px) {
+
+  aside {
+    width: 100%
+  }
+
+	nav{
+		width: 30%;
 	}
 
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
+}
 
-	li {
-		display: block;
-		float: left;
-	}
-
-	a {
-		text-decoration: none;
-		padding: 1em 0.5em;
-		display: block;
-	}
-	.batman{
-		display: none;
-	}
 </style>
 
-<nav>
-<ul>
-	<li>
-		<a href='.' class="batman"> Index </a>
-	</li>
+<aside>
 	{#if segment !== undefined }
-	<li>
-		<a href='about'> About </a>
-	</li>
-	<li>
-		<a href='portfolio'> Portfolio </a>
-	</li>
+	<Brand/>
 	{/if}
-</ul>
-</nav>
+	<nav>
+		<Menu {segment} />
+	</nav>
+</aside>
