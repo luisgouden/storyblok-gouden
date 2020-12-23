@@ -5,7 +5,6 @@ console.log(segment);
 
 <style>
 
-
 	ul {
 		display: flex;
 	  justify-content: space-evenly;
@@ -17,10 +16,6 @@ console.log(segment);
 	li {
 	  padding: 0;
 	  font-size: 120%
-	}
-
-	.batman{
-		display: none;
 	}
 
 @media (min-width:992px) {
@@ -41,9 +36,6 @@ console.log(segment);
 </style>
 
 <ul>
-	<li>
-		<a href='.' class="batman"> Index </a>
-	</li>
 	{#if segment !== undefined }
 	<li>
 		<a href='about'> About </a>

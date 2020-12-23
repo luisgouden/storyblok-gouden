@@ -12,11 +12,11 @@ aside {
   height: max-content;
   position: sticky;
   display: flex;
-  justify-content: space-between;
 	flex-direction:row;
 	top: 0;
-	width: 75%;
-	align-items: center
+	align-items: center;
+	width: 100%;
+	justify-content: center;
 }
 
 nav{
@@ -25,6 +25,12 @@ nav{
 }
 
 @media (min-width:992px) {
+
+	aside {
+	  justify-content: space-between;
+		width: 75%;
+
+	}
 
 	nav {
 	  display: flex;

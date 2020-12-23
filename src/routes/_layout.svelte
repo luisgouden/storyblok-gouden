@@ -10,6 +10,7 @@
 
 <script>
 	import Nav from '../components/Nav.svelte';
+  import Footer from '../components/Footer.svelte';
 
 	export let stories = []
 	export let segment;
@@ -23,4 +24,5 @@
 <main>
 	<slot></slot>
 </main>
-<footer />
+
+<Footer {segment} />
