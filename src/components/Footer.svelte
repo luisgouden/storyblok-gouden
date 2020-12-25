@@ -5,10 +5,6 @@
 
 <style>
 
-.comodin {
-  margin-top: var(--heightMenuMobile);
-}
-
 footer {
   height: var(--heightMenu);
   left: 0;

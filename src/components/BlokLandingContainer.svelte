@@ -4,10 +4,13 @@
 </script>
 
 <style>
+:root{
+  --project: calc(var(--maxwidth)/2 - 3rem)
+}
 section{
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
-  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit,minmax(var(--project),1fr));
+  grid-gap: .5rem;
   box-sizing: border-box;
   width: 100%;
 }

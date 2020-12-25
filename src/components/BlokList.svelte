@@ -10,7 +10,7 @@
 		display: flex;
 	}
   img{
-    max-height: 10rem;
+    max-height: calc(var(--unit)/2);
   }
   .skill{
     display: grid;

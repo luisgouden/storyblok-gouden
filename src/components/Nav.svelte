@@ -17,6 +17,7 @@ aside {
 	align-items: center;
 	width: 100%;
 	justify-content: center;
+	background-color:transparent;
 }
 
 nav{
@@ -28,7 +29,8 @@ nav{
 
 	aside {
 	  justify-content: space-between;
-		width: 75%;
+		background-color: var(--white);
+
 
 	}
 
@@ -37,6 +39,7 @@ nav{
 	  align-items: center;
 	  width: min-content;
 	  flex-direction:row-reverse;
+		width: 30%;
 	}
 
 }
@@ -44,11 +47,10 @@ nav{
 @media (min-width:1200px) {
 
   aside {
-    width: 100%
   }
 
 	nav{
-		width: 30%;
+
 	}
 
 }

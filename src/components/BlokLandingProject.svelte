@@ -5,11 +5,22 @@
 </script>
 
 <style>
-a{
-}
+  a{
+  }
+
 	img {
 		width: 100%;
 	}
+  a:last-of-type{
+    margin-bottom:var(--heightMenuMobile);
+  }
+
+  @media (min-width:992px) {
+    a:last-of-type{
+      margin-bottom:0;
+    }
+
+  }
 
 </style>
 

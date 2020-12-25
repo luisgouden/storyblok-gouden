@@ -8,6 +8,8 @@
   --secondary: #fff;
   --heightMenu: 3em;
   --heightMenuMobile: 6em;
+  --unit: 8em;
+  --maxwidth: 1000px;
 }
 
 .inline {
@@ -75,7 +77,7 @@ body, html {
 
 html {
   box-sizing: border-box;
-  min-height: 1000px
+  min-height: var(--maxwidth);
 }
 
 *, :after, :before {
@@ -90,7 +92,7 @@ body {
 
 #sapper{
   width: 95%;
-  max-width: 1000px;
+  max-width: var(--maxwidth);
 
 }
 
@@ -184,7 +186,7 @@ h3 {
 }
 
 body {
-  font-family: Fira Sans, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 2rem;
   color: #1a1a1a
 }

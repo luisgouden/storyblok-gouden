@@ -6,9 +6,10 @@
 <style>
 	div {
 		display: flex;
-		max-width: 56em;
 		margin: 2em 0;
 		box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
 	}
   h1{
     width:minmax(min-content, 25%);

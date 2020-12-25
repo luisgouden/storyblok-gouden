@@ -3,8 +3,8 @@
 import { goto } from '@sapper/app';
 
 function validation(event){
-	const pass =  event.target.value;
-
+	const pass =  event.target.value.toLowerCase().trim();
+	
 	if(pass === 'popi'){
 		goto('/portfolio');
 	}

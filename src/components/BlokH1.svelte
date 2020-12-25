@@ -6,13 +6,11 @@
 
 <style>
   h1{
-    width:minmax(min-content, 25%);
-    margin-right:2rem;
+
+    text-align: center;
   }
 </style>
 
-<div use:editable={blok} class="teaser">
-<h1 style="color:{blok.color}">
+<h1 use:editable={blok} class="teaser" style="color:{blok.color}">
   {blok.h1}
 </h1>
-</div>
