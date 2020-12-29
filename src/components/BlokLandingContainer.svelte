@@ -5,7 +5,7 @@
 
 <style>
 :root{
-  --project: calc(var(--maxwidth)/2 - 3rem)
+
 }
 section{
   display: grid;

@@ -10,6 +10,7 @@
   --heightMenuMobile: 6em;
   --unit: 8em;
   --maxwidth: 1000px;
+  --project: calc(var(--maxwidth)/2 - 6rem);
 }
 
 .inline {

@@ -13,7 +13,8 @@ footer {
   bottom: 0;
   text-align: center;
   z-index: 1;
-  background-color: var(--white)
+  background-color: var(--white);
+	max-width:100vw;
 }
 
 nav {
