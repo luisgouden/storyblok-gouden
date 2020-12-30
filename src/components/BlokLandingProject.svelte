@@ -12,7 +12,7 @@
 		width: 100%;
 	}
   a:last-of-type{
-    margin-bottom:var(--heightMenuMobile);
+    margin-bottom:var(--heightMenu);
   }
 
   @media (min-width:992px) {

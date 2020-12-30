@@ -79,13 +79,14 @@ body, html {
 
 html {
   box-sizing: border-box;
-  min-height: var(--maxwidth);
+  min-height: 100vh;
 }
 @media (min-width:992px) {
   html {
-    min-height: 100vh;
+    min-height: var(--maxwidth);
   }
 }
+
 *, :after, :before {
   box-sizing: inherit
 }
