@@ -4,7 +4,7 @@ import { goto } from '@sapper/app';
 
 function validation(event){
 	const pass =  event.target.value.toLowerCase().trim();
-	
+
 	if(pass === 'popi'){
 		goto('/portfolio');
 	}
@@ -27,6 +27,7 @@ function validation(event){
 		border-radius:.5rem;
 		border-style: solid;
 		border-color: black;
+		font-size: 16px;
 	}
 
 </style>
