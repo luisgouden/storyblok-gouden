@@ -9,7 +9,7 @@
 }
 section{
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(var(--project),1fr));
+  grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
   grid-gap: .5rem;
   box-sizing: border-box;
   width: 100%;

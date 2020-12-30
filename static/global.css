@@ -10,7 +10,8 @@
   --heightMenuMobile: 6em;
   --unit: 8em;
   --maxwidth: 1000px;
-  --project: calc(var(--maxwidth)/2 - 6rem);
+  --maxWidthGap: calc(1000px - 0.5rem);
+  --project: calc(var(--maxwidth)/2 - 8rem);
 }
 
 .inline {
@@ -80,7 +81,11 @@ html {
   box-sizing: border-box;
   min-height: var(--maxwidth);
 }
-
+@media (min-width:992px) {
+  html {
+    min-height: 100vh;
+  }
+}
 *, :after, :before {
   box-sizing: inherit
 }
