@@ -5,12 +5,19 @@
 </script>
 
 <style>
-	div {
+	.wrapper {
 		width: 100%;
 		display: flex;
+
+    padding: .5rem;
+    border-radius:1rem;
+    background: #FFF;
+    box-shadow:  20px 20px 60px #f0f0f0,
+             -20px -20px 60px #ffffff;
 	}
   img{
     max-height: calc(var(--unit)/2);
+    max-width: calc(var(--unit)/2);
   }
   .skill{
     display: grid;
@@ -21,9 +28,21 @@
 
   }
 
+
+  @media (min-width:992px) {
+    .wrapper {
+      flex-direction: column;
+    }
+
+    .skill{
+      display: grid;
+      justify-content: start;
+      align-items: center;
+    }
+  }
 </style>
 
-<div use:editable={blok}>
+<div class="wrapper" use:editable={blok}>
   	<img alt={blok.image.alt} src={blok.image.filename}>
     <div class="skill">
     <p>{blok.skill}</p>

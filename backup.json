@@ -1,0 +1,62 @@
+{
+  "story": {
+    "name": "About",
+    "created_at": "2020-12-16T19:52:29.073Z",
+    "published_at": "2021-01-11T12:47:58.904Z",
+    "alternates": [],
+    "id": 31507816,
+    "uuid": "76168e2c-4cf4-4fbf-94d7-3f4e68f26c56",
+    "content": {
+      "_uid": "546b69fb-8813-4d9f-9d15-2063eea3b25a",
+      "body": [{
+        "_uid": "98215b22-6002-4c78-9087-eb860c2264f3",
+        "body": [{
+          "_uid": "b582e4fc-a6f4-4a2c-b5cd-71fad2d0597f",
+          "image": {
+            "id": 1750176,
+            "alt": "",
+            "name": "",
+            "focus": null,
+            "title": "",
+            "filename": "https://a.storyblok.com/f/99666/512x512/47cf87dfdc/logo-512.png",
+            "copyright": "",
+            "fieldtype": "asset"
+          },
+          "skill": "Se mucho de esto",
+          "component": "BlokList"
+        }, {
+          "_uid": "37bafcfc-fb24-4482-8ac5-a8c6b1ab5226",
+          "image": {
+            "id": 1750176,
+            "alt": "",
+            "name": "",
+            "focus": null,
+            "title": "",
+            "filename": "https://a.storyblok.com/f/99666/512x512/47cf87dfdc/logo-512.png",
+            "copyright": "",
+            "fieldtype": "asset"
+          },
+          "skill": "A veces hago esto tambien",
+          "component": "BlokList"
+        }],
+        "component": "BlokListContainer"
+      }],
+      "component": "Page"
+    },
+    "slug": "about",
+    "full_slug": "about",
+    "default_full_slug": null,
+    "sort_by_date": null,
+    "position": 30,
+    "tag_list": [],
+    "is_startpage": false,
+    "parent_id": 0,
+    "meta_data": null,
+    "group_id": "bcd4efa4-4fda-4c3f-ad88-23661d6d51c5",
+    "first_published_at": "2020-12-16T20:02:12.624Z",
+    "release_id": null,
+    "lang": "default",
+    "path": null,
+    "translated_slugs": []
+  }
+}

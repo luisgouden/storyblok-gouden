@@ -8,6 +8,16 @@ section{
   width: 100%;
 }
 
+@media (min-width:992px) {
+  section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: .5rem;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+
 </style>
 
 <section>
