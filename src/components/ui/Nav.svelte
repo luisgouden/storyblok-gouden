@@ -1,6 +1,6 @@
 <script>
-	import Brand from '../components/Brand.svelte';
-	import Menu from '../components/Menu.svelte';
+	import Brand from './Brand.svelte';
+	import Menu from './Menu.svelte';
 
 export let segment;
 
@@ -18,39 +18,24 @@ aside {
 	width: 100%;
 	justify-content: center;
 	background-color:transparent;
+
+	@media (min-width:992px) {
+	  justify-content: space-between;
+		background-color: var(--white);
+	}
+
 }
 
 nav{
   display: none;
 	font-weight: 400;
-}
 
-@media (min-width:992px) {
-
-	aside {
-	  justify-content: space-between;
-		background-color: var(--white);
-
-
-	}
-
-	nav {
+	@media (min-width:992px) {
 	  display: flex;
 	  align-items: center;
 	  width: min-content;
 	  flex-direction:row-reverse;
 		width: 30%;
-	}
-
-}
-
-@media (min-width:1200px) {
-
-  aside {
-  }
-
-	nav{
-
 	}
 
 }

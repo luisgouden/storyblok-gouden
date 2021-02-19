@@ -1,7 +1,7 @@
 <script>
-  import { editable } from '../directives'
+  import { editable } from "../directives";
 
-  export let blok
+  export let blok;
 </script>
 
 <div use:editable={blok} class="teaser">

@@ -22,6 +22,12 @@
     "sapper": "^0.27.16",
     "svelte": "^3.24.0",
     "svelte-loader": "^2.9.0",
-    "webpack": "^4.43.0"
+    "file-loader": "^6.0.0",
+    "webpack": "^4.7.0",
+    "webpack-modules": "^1.0.0",
+    "svelte-preprocess": "^4.6.1",
+    "postcss": "^8.2.4",
+    "postcss-import": "^14.0.0",
+    "postcss-preset-env": "^6.7.0"
   }
 }

@@ -1,7 +1,7 @@
-const addClass = function(el, className) {
+const addClass = function (el, className) {
   if (el.classList) {
     el.classList.add(className)
-  } else if (!new RegExp('\\b'+ className+'\\b').test(el.className)) {
+  } else if (!new RegExp('\\b' + className + '\\b').test(el.className)) {
     el.className += ' ' + className
   }
 }

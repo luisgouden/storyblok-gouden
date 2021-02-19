@@ -1,6 +1,6 @@
-:root{
+:root {
   --black: hsl(338, 0%, 10%);
-  --blackTransparent: hsla(338, 0%, 10%,0);
+  --blackTransparent: hsla(338, 0%, 10%, 0);
   --blackHover: hsl(338, 0%, 0%);
   --white: hsl(338, 0%, 100%);
   --grey: hsl(338, 0%, 50%);
@@ -14,191 +14,94 @@
   --project: calc(var(--maxwidth)/2 - 8rem);
 }
 
-.inline {
-  display: inline-block
-}
-
-.desktop {
-  display: none
-}
-
-@media (min-width:992px) {
-  .desktop {
-    display: none
-  }
-}
-
-@media (min-width:1200px) {
-  .desktop {
-    display: flex
-  }
-}
-
-.mobile {
-  display: flex
-}
-
-@media (min-width:992px) {
-  .mobile {
-    display: none
-  }
-}
-
-.tabtomobile {
-  display: flex
-}
-
-@media (min-width:1200px) {
-  .tabtomobile {
-    display: none
-  }
-}
-
-.tabtodesktop {
-  display: none
-}
-
-@media (min-width:992px) {
-  .tabtodesktop {
-    display: flex
-  }
-}
-
-@media (min-width:1200px) {
-  .tabtodesktop {
-    display: flex
-  }
-}
-
 body, html {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 html {
   box-sizing: border-box;
   min-height: 100vh;
 }
-@media (min-width:992px) {
+
+@media (min-width: 992px) {
   html {
     min-height: var(--maxwidth);
   }
 }
 
-*, :after, :before {
-  box-sizing: inherit
-}
-
 body {
   display: flex;
-  justify-content: center;
-  align-items: flex-start
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-#sapper{
+main {
+  display: flex;
+  flex-direction: column;
   width: 95%;
-  max-width: var(--maxwidth);
+  min-height: 100vh;
 
 }
 
-article, main {
+@media (min-width:992px) {
+
+  main {
+    width: 100%;
+  }
+
+  main.column{
+    max-width: var(--maxwidth);
+  }
+
+  main.row {
+    flex-direction: row
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header,article,section {
   width: 100%;
-}
-
-ul {
-  padding: 0
-}
-
-ul li {
-  list-style-type: none;
-  list-style: none
-}
-
-a,a:hover, a:visited {
-  color: var(--black);
-  border: 0;
-  text-decoration: none
-}
-a:active{
-  color:var(--blackHover);
-}
-
-html {
-  font-size: 16px
-}
-
-@media screen and (min-width:320px) {
-  html {
-    font-size: calc(16px + 8 * ((100vw - 320px) / 880))
-  }
-}
-
-@media screen and (min-width:1200px) {
-  html {
-    font-size: 24px
-  }
-}
-
-h1 {
-  font-size: 2.0736rem;
-  font-size: 27.648px
-}
-
-@media screen and (min-width:320px) {
-  h1 {
-    font-size: calc(27.648px + 26.352 * ((100vw - 320px) / 880))
-  }
-}
-
-@media screen and (min-width:1200px) {
-  h1 {
-    font-size: 54px
-  }
-}
-
-h2 {
-  font-size: 1.728rem;
-  font-size: 27.648px
-}
-
-@media screen and (min-width:320px) {
-  h2 {
-    font-size: calc(27.648px + 26.352 * ((100vw - 320px) / 880))
-  }
-}
-
-@media screen and (min-width:1200px) {
-  h2 {
-    font-size: 54px
-  }
-}
-
-h3 {
-  font-size: 1.44rem;
-  font-size: 23.04px
-}
-
-@media screen and (min-width:320px) {
-  h3 {
-    font-size: calc(23.04px + 12.96 * ((100vw - 320px) / 880))
-  }
-}
-
-@media screen and (min-width:1200px) {
-  h3 {
-    font-size: 36px
-  }
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
-  line-height: 2rem;
-  color: #1a1a1a
 }
 
-body, h2 {
+html {
+  font-size: clamp(16px,
+    calc(16px + 8 * ((100vw - 320px) / 880)),
+    24px);
+}
+
+h1 {
+  font-size: clamp(2rem,
+    calc(28px + 26 * ((100vw - 320px) / 880)),
+    3.5rem);
+}
+
+h2 {
+  font-size: clamp(1.75rem,
+    calc(25px + 19.5 * ((100vw - 320px) / 880)),
+    3rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem,
+    calc(23px + 13 * ((100vw - 320px) / 880)),
+    2.5rem);
+}
+
+h2 {
   font-weight: 500
 }
 
@@ -208,15 +111,71 @@ p {
   font-weight: 300
 }
 
-a:active, a:hover {
-  color: #000
-}
-
 b, strong {
   font-weight: 600
 }
 
-main {
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+  list-style: none;
+}
+
+*, :after, :before {
+  box-sizing: inherit;
+}
+
+a{
+  text-decoration: none;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.desktop {
+  display: none;
+}
+
+.mobile {
   display: flex;
-  flex-direction: column
+}
+
+.tabtodesktop {
+  display: none;
+}
+
+.tabtomobile {
+  display: flex;
+}
+
+@media (min-width: 992px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .tabtodesktop {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tabtomobile {
+    display: none;
+  }
+
+  .tabtodesktop {
+    display: flex;
+  }
+
+  .desktop {
+    display: flex;
+  }
 }

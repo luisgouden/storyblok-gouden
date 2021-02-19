@@ -9,8 +9,8 @@
 </script>
 
 <script>
-	import Nav from '../components/Nav.svelte';
-  import Footer from '../components/Footer.svelte';
+	import Nav from '../components/ui/Nav.svelte';
+  import Footer from '../components/ui/Footer.svelte';
 
 	export let stories = []
 	export let segment;
@@ -21,8 +21,6 @@
 
 <Nav {segment} {stories} />
 
-<main>
-	<slot></slot>
-</main>
+<slot></slot>
 
 <Footer {segment} />

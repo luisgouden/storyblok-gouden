@@ -1,12 +1,11 @@
 <script>
-  import getComponent from './index'
+  import getComponent from "./index";
 
-  export let blok
+  export let blok;
 </script>
 
 <div>
   {#each blok.body as blok}
-    <svelte:component blok={blok}
-    this={getComponent(blok.component)} />
+    <svelte:component this={getComponent(blok.component)} {blok} />
   {/each}
 </div>

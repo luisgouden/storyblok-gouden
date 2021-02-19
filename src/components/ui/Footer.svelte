@@ -1,5 +1,5 @@
 <script>
-	import Menu from '../components/MenuFooter.svelte';
+	import Menu from './MenuFooter.svelte';
 	export let segment;
 </script>
 

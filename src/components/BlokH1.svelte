@@ -1,12 +1,11 @@
 <script>
-  import { editable } from '../directives'
+  import { editable } from "../directives";
 
-  export let blok
+  export let blok;
 </script>
 
 <style>
-  h1{
-
+  h1 {
     text-align: center;
   }
 </style>
